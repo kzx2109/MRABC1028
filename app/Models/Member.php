@@ -16,6 +16,6 @@ class Member extends Model
     protected $primarykey ='memberId';
 
     protected $fillable =[
-        'memberId','memberAccount','memberPassword','memberGender','memberEmail','memberTitle','memberDCount','memberDContinute'
+        'memberId','memberAccount','memberPassword','memberGender','memberEmail','memberTitle','memberDCount','memberDContinue'
     ];
 }

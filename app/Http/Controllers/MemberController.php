@@ -34,4 +34,7 @@ class MemberController extends Controller
     public function getmemberPassword(Request $request){
         return $this->memberService->getmemberPassword($request);
     }
+    public function insertMember(Request $req){
+        return $this->memberService->insertMember($req);
+    }
 }

@@ -62,5 +62,12 @@ class memberService{
             return $res;
         }
     }
-    
+    public function insertMember($req){
+        $res = $this->memberRepository->insertMember($req);
+        if($res){
+            return "success";
+        }else{
+            return "fail";
+        }
+    }
 }

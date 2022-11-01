@@ -43,4 +43,16 @@ class MemberRepository{
         $res = Member ::select('memberpassword')->where("memberId",$id)->get();
         return $res;
     }
+    public function insertMember($req){
+        $res = Member :: create([
+            "memberAccount"=>$req->memberAccount,
+            "memberPassword"=>$req->memberPassword,
+            "memberGender"=>"",
+            "memberEmail"=>"",
+            "memberTitle"=>"EMI Student",
+            "memberDCount" => 0,
+            "memberDContinue" => 0
+        ]);
+        return $res;
+    }
 }

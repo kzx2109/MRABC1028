@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\DiaryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,10 @@ Route::post('/updatemail',[MemberController::class,'updateEmail']);
 Route::post('/updategender',[MemberController::class,'updateGender']);
 Route::post('/updatepassword',[MemberController::class,'updatePassword']);
 Route::post('/getmemberpassword',[MemberController::class,'getmemberPassword']);
+Route::post('/getdiary',[DiaryController::class,'getDiary']);
+Route::post('/getfeedback',[DiaryController::class,'getFeedback']);
+Route::post('/getstar',[DiaryController::class,'getStar']);
+Route::post('/updatefeedback',[DiaryController::class,'updateFeedback']);
+Route::get('/getdiarydata',[DiaryController::class,'getdiaryData']);
+Route::post('/insertmember',[MemberController::class,'insertMember']);
+
