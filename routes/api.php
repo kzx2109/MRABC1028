@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\DiaryController;
+use App\Http\Controllers\MempController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,4 +34,5 @@ Route::post('/getstar',[DiaryController::class,'getStar']);
 Route::post('/updatefeedback',[DiaryController::class,'updateFeedback']);
 Route::get('/getdiarydata',[DiaryController::class,'getdiaryData']);
 Route::post('/insertmember',[MemberController::class,'insertMember']);
+Route::post('/getunitnum',[MempController::class,'getunitNum']);
 
