@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\DiaryController;
 use App\Http\Controllers\MempController;
+use App\Http\Controllers\UnitController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,4 +36,10 @@ Route::post('/updatefeedback',[DiaryController::class,'updateFeedback']);
 Route::get('/getdiarydata',[DiaryController::class,'getdiaryData']);
 Route::post('/insertmember',[MemberController::class,'insertMember']);
 Route::post('/getunitnum',[MempController::class,'getunitNum']);
-
+Route::post('/getavgbyday',[MempController::class,'getAvgbyDay']);
+Route::post('/getavgibc',[MempController::class,'getAvgIBC']);
+Route::post('/getallavgdate',[MempController::class,'getAllavgDate']);
+Route::post('/insertdiary',[DiaryController::class,'insertdiary']);
+Route::post('/getcompletion',[MempController::class,'getcompletion']);
+Route::get('/struallcount',[UnitController::class,'struAllcount']);
+Route::post('/gettimes',[MempController::class,'getTimes']);

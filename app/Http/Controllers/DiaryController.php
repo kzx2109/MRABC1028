@@ -27,4 +27,7 @@ class DiaryController extends Controller
     public function getdiaryData(Request $req){
         return $this->diaryService->getdiaryData($req);
     }
+    public function insertdiary(Request $req){
+        return $this->diaryService->insertdiary($req);
+    }
 }

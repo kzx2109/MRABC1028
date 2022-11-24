@@ -47,4 +47,13 @@ class diaryService{
             return "fail";
         }
     }
+    public function insertdiary($req){
+        $res=$this->diaryRepository->insertdiary($req);
+        if($res){
+            return "success";
+        }
+        else{
+            return "fail";
+        }
+    }
 }

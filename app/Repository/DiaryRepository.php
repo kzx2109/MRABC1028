@@ -47,4 +47,13 @@ class DiaryRepository{
             return 0;
         }
     }
+    public function insertdiary($req){
+        $res = Diary :: create([
+            "diaryDate"=>$req->diaryDate,
+            "diaryStar"=>0,
+            "diaryFeedback"=>$req->diaryFeedback,
+            "memberId"=>$req->memberId
+        ]);
+        return $res;
+    }
 }
